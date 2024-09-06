@@ -1,9 +1,9 @@
-/* สไตล์พื้นฐานของ body */
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #ffc0cb; /* สีพื้นหลังชมพูอ่อน */
+  background-color: #ffc0cb; 
   display: flex;
   flex-direction: column;
   justify-content: center;
