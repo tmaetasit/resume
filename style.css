@@ -1,0 +1,88 @@
+nav a {
+  color: blue; 
+  text-decoration: none; 
+  margin: 0 10px; 
+}
+
+nav a:hover {
+  text-decoration: underline; 
+}
+
+
+body {
+  background-color: pink;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.pink-bg {
+  background-color: pink;
+}
+
+.center-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50px;
+  width: 200px;
+  height: 200px;
+}
+
+h1, h2, h3, p {
+  text-align: center;
+}
+
+.centered-list {
+  display: inline-block;
+  text-align: left;
+  padding-left: 20px;
+}
+
+nav {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  
+}
+
+table, th, td {
+  border: 1px solid #000;
+  border-collapse: collapse;
+  margin: auto;
+  width: 50%;
+  height: 50%;
+  text-align: center;
+}
+
+/* Image container for hobbies and movies */
+.image-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.image-container img {
+  border-radius: 50px;
+  width: 200px;
+  height: 200px;
+}
+
+.centered-list {
+  display: flex;
+  justify-content: center; 
+  text-align: left; 
+}
+
+.centered-list ul {
+  padding: 0; 
+}
+
+.centered-list li {
+  margin: 5px 0; 
+}
