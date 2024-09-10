@@ -5,57 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Me</title>
     <link rel="stylesheet" href="style.css" />
+    <!-- ลิงก์ไปยังไฟล์ CSS ภายนอก -->
   </head>
-  <body class="pink-bg">
+  <body>
+    <!-- ลิงก์นำทาง (Navigation Links) -->
     <nav>
-      <a href="index.html">Home Page</a>
+      <a href="HomePage.html">Home Page</a>
       <a href="MyHobbies.html">My Hobbies</a>
       <a href="WorkExperience.html">Work Experience</a>
-      <a href="contactme.html">Contact Me</a>
+      <a href="contact me.html">Contact Me</a>
     </nav>
 
-    <h1>Contact Me &#128512;</h1>
+    <!-- เนื้อหาหลัก (Main Content) -->
+    <h1>Contact Me &#128233;</h1>
+    <!-- ข้อความหัวเรื่อง พร้อมไอคอนแสดงอีโมจิ -->
 
-    <form action="">
-      <label for="firstname">First Name:</label><br /><br />
-      <input
-        type="text"
-        id="firstname"
-        name="firstname"
-        placeholder="Enter your first name"
-      /><br /><br />
-
-      <label for="lastname">Last Name:</label><br /><br />
-      <input
-        type="text"
-        id="lastname"
-        name="lastname"
-        placeholder="Enter your last name"
-      /><br /><br />
-
-      <label for="gender">Gender:</label><br /><br />
-      <select name="gender" id="gender">
-        <option value="Male">Male</option>
-        <option value="Female">Female</option></select
-      ><br /><br />
-
-      <label for="email">Email:</label><br /><br />
-      <input
-        type="email"
-        id="email"
-        name="email"
-        placeholder="Enter your email"
-      /><br /><br />
-
-      <label for="tel">Tel:</label><br /><br />
-      <input
-        type="tel"
-        id="tel"
-        name="tel"
-        placeholder="Enter your phone number"
-      /><br /><br />
-
-      <input type="submit" value="Submit" /><br /><br />
-    </form>
+    <form>
+        <label for="name">ชื่อ:
+          <input type="text" id="name" name="name">
+        </label>
+        <label for="email">อีเมล:
+          <input type="email" id="email" name="email">
+        </label>
+        <label for="phone">โทรศัพท์:
+          <input type="tel" id="phone" name="phone">
+        </label>
+        <label for="gender">เพศ:
+          <select id="gender" name="gender">
+            <option value="male">ชาย</option>
+            <option value="female">หญิง</option>
+          </select>
+        </label>
+        <input type="submit" value="ส่ง">
+      </form>
   </body>
 </html>
