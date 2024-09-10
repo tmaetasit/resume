@@ -1,47 +1,4 @@
-/* กำหนดรูปแบบของลิงก์ในแท็ก <nav> */
-nav a {
-  color: blue; /* เปลี่ยนสีของลิงก์เป็นสีน้ำเงิน */
-  text-decoration: none; /* ไม่มีการขีดเส้นใต้ใต้ข้อความลิงก์ */
-  margin: 0 10px; /* กำหนดระยะห่างซ้าย-ขวาของลิงก์ */
-}
-
-/* กำหนดรูปแบบเมื่อผู้ใช้เลื่อนเมาส์ไปเหนือ (hover) ลิงก์ */
-nav a:hover {
-  text-decoration: underline; /* ขีดเส้นใต้ใต้ข้อความลิงก์เมื่อเมาส์ชี้ */
-}
-
-/* กำหนดรูปแบบทั่วไปของหน้าเว็บ */
-body {
-  background-color: pink; /* กำหนดสีพื้นหลังเป็นสีชมพู */
-  font-family: Arial, sans-serif; /* ใช้ฟอนต์ Arial และ sans-serif */
-  margin: 0; /* ไม่มีขอบด้านนอกของหน้า */
-  padding: 0; /* ไม่มีการเว้นระยะห่างภายในหน้า */
-}
-
-/* คลาสที่ใช้เพื่อกำหนดสีพื้นหลังเป็นสีชมพู */
-.pink-bg {
-  background-color: pink; /* กำหนดสีพื้นหลังเป็นสีชมพู */
-}
-
-/* จัดตำแหน่งภาพให้อยู่กึ่งกลางและมีขอบโค้งมน */
-.center-img {
-  display: block; /* กำหนดให้แสดงผลเป็น block (ทำให้สามารถกำหนด margin ได้) */
-  margin-left: auto; /* จัดตำแหน่งซ้ายเป็น auto เพื่อช่วยจัดกึ่งกลาง */
-  margin-right: auto; /* จัดตำแหน่งขวาเป็น auto เพื่อช่วยจัดกึ่งกลาง */
-  border-radius: 50px; /* ทำขอบภาพให้โค้งมน */
-  width: 200px; /* กำหนดความกว้างของภาพ */
-  height: 200px; /* กำหนดความสูงของภาพ */
-}
-
-/* กำหนดรูปแบบข้อความให้จัดอยู่กึ่งกลาง */
-h1,
-h2,
-h3,
-p {
-  text-align: center;
-}
-
-/* จัดลิงก์ในแถบนำทางให้อยู่กึ่งกลาง */
+/* สไตล์ของลิงก์ในแท็ก <nav> */
 nav {
   display: flex;
   justify-content: center;
@@ -49,13 +6,35 @@ nav {
 }
 
 nav a {
-  color: blue;
-  text-decoration: none;
-  margin: 0 10px;
+  color: blue; 
+  text-decoration: none; /* ไม่มีขีดเส้นใต้ */
+  margin: 0 10px; /* ระยะห่างซ้ายขวา */
 }
 
 nav a:hover {
-  text-decoration: underline;
+  text-decoration: underline; /* ขีดเส้นใต้เมื่อเมาส์วาง */
+}
+
+/* รูปแบบทั่วไปของหน้าเว็บ */
+body {
+  background-color: pink; 
+  font-family: Arial, sans-serif; 
+  margin: 0; /* ไม่มีขอบนอก */
+  padding: 0; /* ไม่มีการเว้นระยะภายใน */
+}
+
+/* รูปแบบของภาพที่จัดกึ่งกลางและมีขอบโค้งมน */
+.center-img {
+  display: block;
+  margin: auto;
+  border-radius: 50px; /* ขอบภาพโค้งมน */
+  width: 200px; /* กำหนดขนาดภาพ */
+  height: 200px;
+}
+
+/* กำหนดการจัดกึ่งกลางข้อความ */
+h1, h2, h3, p {
+  text-align: center;
 }
 
 /* สไตล์ของฟอร์ม */
@@ -68,11 +47,15 @@ form {
   padding: 20px;
   background-color: white;
   border-radius: 10px;
+  width: 50%;
+  margin: 0 auto;
 }
 
+/* จัดข้อความของ label ให้อยู่กึ่งกลางและเว้นระยะ */
 label {
   text-align: center;
   width: 100%;
+  margin-bottom: 10px;
 }
 
 /* สไตล์ของช่อง input และ select */
@@ -80,19 +63,19 @@ input[type="text"],
 input[type="email"],
 input[type="tel"],
 select {
-  width: 100%;
+  width: 80%; /* กำหนดความกว้างให้ทุกช่อง */
   padding: 10px;
-  margin-top: 5px;
-  margin-bottom: 15px;
+  margin: 10px 0;
   border: 1px solid #ccc;
   border-radius: 5px;
+  box-sizing: border-box; /* ทำให้ padding และ border รวมอยู่ในขนาด */
 }
 
 /* สไตล์ของปุ่ม submit */
 input[type="submit"] {
-  width: 100%;
+  width: 30%;
   padding: 10px;
-  background-color: #ff69b4; /* สีปุ่มชมพูสด */
+  background-color: #ff69b4;
   color: white;
   border: none;
   border-radius: 5px;
@@ -100,28 +83,28 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #ff1493; /* สีชมพูเข้มเมื่อเอาเมาส์ไปวาง */
+  background-color: #ff1493;
 }
 
 /* สไตล์ของรายการ (list) ที่จัดกึ่งกลาง */
 .centered-list {
-  display: inline-block;
-  text-align: left;
-  padding-left: 20px;
+  display: flex;
+  justify-content: center; /* จัดให้อยู่กึ่งกลางแนวนอน */
+  align-items: center; /* จัดให้อยู่กึ่งกลางแนวตั้ง */
+  text-align: center;
 }
 
 .centered-list ul {
-  padding: 0;
+  padding: 0; /* ลบ padding ของ ul */
+  margin: 0; /* ลบ margin ของ ul */
 }
 
 .centered-list li {
-  margin: 5px 0;
+  margin: 9px 0; /* ระยะห่างระหว่างรายการ */
 }
 
 /* สไตล์ของตาราง */
-table,
-th,
-td {
+table, th, td {
   border: 1px solid #000;
   border-collapse: collapse;
   margin: auto;
@@ -129,7 +112,7 @@ td {
   text-align: center;
 }
 
-/* คอนเทนเนอร์รูปภาพสำหรับงานอดิเรกและภาพยนตร์ */
+/* คอนเทนเนอร์รูปภาพ */
 .image-container {
   display: flex;
   justify-content: center;
@@ -138,16 +121,6 @@ td {
 }
 
 .image-container img {
-  border-radius: 50px;
-  width: 200px;
-  height: 200px;
-}
-
-/* จัดภาพให้กึ่งกลาง */
-.center-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   border-radius: 50px;
   width: 200px;
   height: 200px;
